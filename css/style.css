@@ -1,0 +1,34 @@
+html {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background: #00688b;
+  font-family: "Optima", sans-serif;
+  color: white;
+}
+header {
+  padding: 32px;
+  border-bottom: 1px solid #333333;
+  background: rgba(0, 0, 0, 1);
+}
+.links {
+  text-align: center;
+}
+.link a {
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 16px;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+.link a:hover {
+  color: rgb(131, 111, 255);
+  transition: color 200ms;
+}
