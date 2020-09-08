@@ -8,7 +8,7 @@ html {
   border: 0;
 }
 body {
-  background: #00688b;
+  background: var(--color-fundo);
   font-family: "Optima", sans-serif;
   color: white;
 }
@@ -20,15 +20,28 @@ header {
 .links {
   text-align: center;
 }
-.link a {
-  color: white;
+.links a {
+  color: var(--color-text-complement);
   font-size: 18px;
   line-height: 28px;
   margin: 0 16px;
   padding-bottom: 3px;
   text-decoration: none;
 }
-.link a:hover {
+.links a:hover {
   color: rgb(131, 111, 255);
   transition: color 200ms;
+}
+.links-footer {
+  font-size: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper img {
+  height: 35rem;
+  border-radius: 28000px;
+  border: 3px solid var(--color-primary-darker);
+  margin-bottom: 52px;
+  border-;
 }
