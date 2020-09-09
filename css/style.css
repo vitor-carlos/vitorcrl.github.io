@@ -30,7 +30,7 @@ header {
   line-height: 28px;
   margin: 0 16px;
   padding-bottom: 3px;
-  text-decoration: ;
+  text-decoration: none;
 }
 
 .links {
@@ -63,4 +63,6 @@ header {
 
 .espec h5 {
   margin: 100px 15px;
+
+  grid-template-columns: repeat(3, 1fr);
 }
