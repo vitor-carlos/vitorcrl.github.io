@@ -20,6 +20,7 @@
   --color-small-info: #c1bccc;
   --color-teste: #9932cc;
   --color-fundo: #363636;
+  --color-title: #4f4f4f;
   font-size: 60%; /* controle das medidas rem */
 }
 * {
@@ -47,10 +48,6 @@ textarea {
   font-family: Poppins;
   font-size: 1.6rem;
   color: var(--color-small-info);
-}
-#container {
-  width: 100vw;
-  max-width: 700px;
 }
 /*modificacao de tamanho para proporcao */
 @media (min-width: 600px) {

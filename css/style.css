@@ -8,15 +8,31 @@ html {
   border: 0;
 }
 body {
+  text-align: center;
   background: var(--color-fundo);
   font-family: "Optima", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   color: white;
+  display: grid;
 }
 header {
-  padding: 32px;
-  border-bottom: 1px solid #333333;
-  background: rgba(0, 0, 0, 1);
+  margin: 0;
+  height: 5vh;
+  padding: 10px;
+  border-top: 1px solid #333333;
+  background: var(--color-title);
+  position: relative;
 }
+.title h5 {
+  color: var(--color-small-info);
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 16px;
+  padding-bottom: 3px;
+  text-decoration: ;
+}
+
 .links {
   text-align: center;
 }
@@ -41,7 +57,10 @@ header {
 .wrapper img {
   height: 35rem;
   border-radius: 28000px;
-  border: 3px solid var(--color-primary-darker);
+  border: 1px solid var(--color-text-base);
   margin-bottom: 52px;
-  border-;
+}
+
+.espec h5 {
+  margin: 100px 15px;
 }
