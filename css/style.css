@@ -66,3 +66,8 @@ header {
 
   grid-template-columns: repeat(3, 1fr);
 }
+
+/* minha-foto {
+  display: flex;
+  width: 100%;
+} */
