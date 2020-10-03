@@ -66,6 +66,14 @@ header {
 
   grid-template-columns: repeat(3, 1fr);
 }
+.espec img {
+  height: 10rem;
+  align-items: center;
+
+  position: absolute;
+  left: 522px;
+  /*margin-right: 52px;*/
+}
 
 /* minha-foto {
   display: flex;
