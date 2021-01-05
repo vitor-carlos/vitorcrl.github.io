@@ -9,7 +9,7 @@ html {
 }
 body {
   text-align: center;
-  background: var(--color-fundo);
+  background: var(--color-box-footer);
   font-family: "Optima", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -20,7 +20,7 @@ header {
   margin: 0;
   height: 5vh;
   padding: 10px;
-  border-top: 1px solid #333333;
+  border-top: 1px solid #6842c2;
   background: var(--color-title);
   position: relative;
 }

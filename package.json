@@ -1,0 +1,24 @@
+{
+  "name": "Create-Portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitor-carlos/Create-Portfolio.git"
+  },
+  "author": "vitorcrl <vitor.carlos_souza@hotmail.com>",
+  "license": "MIT",
+  "description": "Criacao com as etapas do meu Portfolio",
+  "bugs": {
+    "url": "https://github.com/vitor-carlos/Create-Portfolio/issues"
+  },
+  "homepage": "https://github.com/vitor-carlos/Create-Portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": []
+}
