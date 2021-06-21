@@ -6,14 +6,15 @@ html {
   margin: 0;
   padding: 0;
   border: 0;
+  color: #6a6180;
 }
 body {
   text-align: center;
-  background: var(--color-box-footer);
+  background: var(#6a6180);
   font-family: "Optima", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #363636 ;
+  color: --color-box-footer ;
   display: flex;
 }
 header {
