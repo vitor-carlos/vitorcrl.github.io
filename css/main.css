@@ -36,7 +36,7 @@ body {
 
 body {
   background: var(--color-text-complement);
-  display: inline-flex;
+  display:flex;
   align-items: center;
   justify-content: center;
 }

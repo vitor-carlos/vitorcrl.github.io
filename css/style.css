@@ -26,7 +26,7 @@ header {
   position: relative;
 }
 .title h5 {
-  color: var(--color-small-info);
+  color: var(#04bf58);
   font-size: 18px;
   line-height: 28px;
   margin: 0 16px;
@@ -38,7 +38,7 @@ header {
   text-align: center;
 }
 .links a {
-  color: var(--color-text-complement);
+  color: var(#04bf58);
   font-size: 18px;
   line-height: 28px;
   margin: 0 16px;
@@ -73,7 +73,7 @@ header {
 
   position: absolute;
   left: 522px;
-  /*margin-right: 52px;*/
+  margin-right: 52px;
 }
 
 /* minha-foto {
