@@ -6,12 +6,13 @@ html {
   margin: 0;
   padding: 0;
   border: 0;
-  color: #6a6180;
+  color: #04bf56;
+  background:  --color-fundo;
 }
 body {
   text-align: center;
-  background: var(#6a6180);
-  font-family: "Optima", sans-serif;
+  background: var( --color-fundo);
+  font-family: 'Courier New', Courier, monospace;
   font-style: normal;
   font-weight: normal;
   color: --color-box-footer ;
@@ -21,17 +22,20 @@ header {
   margin: 0;
   height: 5vh;
   padding: 10px;
-  border-top: 1px solid #6842c2;
-  background: var(--color-title);
+  border-top: 1px;
+  background: var( --color-fundo);
   position: relative;
+ 
+
 }
 .title h5 {
-  color: var(#04bf58);
-  font-size: 18px;
-  line-height: 28px;
-  margin: 0 16px;
+  color: var(8);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 30px;
+  line-height: 0px;
+  margin: 0 0 0 0;
   padding-bottom: 3px;
-  text-decoration: none;
+  text-decoration: solid;
 }
 
 .links {
@@ -41,7 +45,7 @@ header {
   color: var(#04bf58);
   font-size: 18px;
   line-height: 28px;
-  margin: 0 16px;
+  margin: 0 52 0 0;
   padding-bottom: 3px;
   text-decoration: none;
 }
