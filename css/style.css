@@ -15,7 +15,7 @@ body {
   font-style: normal;
   font-weight: normal;
   color: --color-box-footer ;
-  display: flex;
+  display: grid;
 }
 header {
   margin: 0;
@@ -54,6 +54,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  color:black;
 }
 .wrapper img {
   height: 35rem;
