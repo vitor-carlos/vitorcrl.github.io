@@ -31,11 +31,12 @@
 html,
 body {
   height: 90vh;
+  text-align: center;
 }
 
 body {
   background: var(--color-text-complement);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }

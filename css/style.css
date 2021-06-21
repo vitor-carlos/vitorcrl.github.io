@@ -13,8 +13,8 @@ body {
   font-family: "Optima", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: white;
-  display: grid;
+  color: #363636 ;
+  display: flex;
 }
 header {
   margin: 0;
