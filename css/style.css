@@ -39,15 +39,19 @@ header {
   font-family:'Courier New', Courier, monospace;
   font-size: 30px;
   line-height: 0px;
-  margin: 0 0 0 0;
+  margin: 0 10 0 0;
   padding-bottom: 3px;
   text-decoration: solid;
+}
+.wrapper h3{
+  margin: 2% 27% 2%;
 }
 
 .links {
   text-align: center;
   color: #6842c2;
 }
+
 .links a {
   color: var(#6842c2);
   font-size: 18px;
@@ -74,18 +78,18 @@ header {
   margin-bottom: 52px;
 }
 
-.espec h5 {
-  margin: 100px 15px;
-
+.espec h4 {
+  margin: 2% 27% 2%;
+/*margin: 0 30%  0;*/
   grid-template-columns: repeat(3, 1fr);
 }
 .espec img {
   height: 10rem;
-  display: flex;
+  display: block;
   align-items: center;
 
   position: relative;
-  left: 43%;
+  left: 45%;
   margin-right: 522px;
 }
 
