@@ -30,12 +30,12 @@
 }
 html,
 body {
-  height: 90vh;
+  height: 100%;
   text-align: center;
 }
 
 body {
-  background: var(--color-text-complement);
+  background: var( --color-primary-darker);
   display:flex;
   align-items: center;
   justify-content: center;
@@ -44,11 +44,9 @@ body,
 input,
 button,
 textarea {
-  /* font: 500 1.6rem Poppins; */
-  font-weight: 400;
-  font-family: Poppins;
-  font-size: 1.6rem;
-  color: var(--color-small-info);
+  /*font: 500 1.6rem Poppins;*/
+  font-size:1.6rem ;
+  color: var( --color-primary-darker);
 }
 /*modificacao de tamanho para proporcao */
 @media (min-width: 600px) {

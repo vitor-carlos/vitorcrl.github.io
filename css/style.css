@@ -6,7 +6,7 @@ html {
   margin: 0;
   padding: 0;
   border: 0;
-  color: #04bf56;
+  color: #6842c2;
   background:  --color-fundo;
 }
 body {
@@ -17,6 +17,10 @@ body {
   font-weight: normal;
   color: --color-box-footer ;
   display: grid;
+  justify-content: center;
+  align-items: center;
+  /*max-width: 100%;*/
+  
 }
 header {
   margin: 0;
@@ -25,11 +29,13 @@ header {
   border-top: 1px;
   background: var( --color-fundo);
   position: relative;
- 
+  display: block;
+  justify-content: center;
+  align-items: center;
 
 }
 .title h5 {
-  color: var(8);
+  color: var(#6842c2);
   font-family:'Courier New', Courier, monospace;
   font-size: 30px;
   line-height: 0px;
@@ -40,9 +46,10 @@ header {
 
 .links {
   text-align: center;
+  color: #6842c2;
 }
 .links a {
-  color: var(#04bf58);
+  color: var(#6842c2);
   font-size: 18px;
   line-height: 28px;
   margin: 0 52 0 0;
@@ -74,11 +81,12 @@ header {
 }
 .espec img {
   height: 10rem;
+  display: flex;
   align-items: center;
 
-  position: absolute;
-  left: 522px;
-  margin-right: 52px;
+  position: relative;
+  left: 43%;
+  margin-right: 522px;
 }
 
 /* minha-foto {
