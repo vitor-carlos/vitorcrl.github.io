@@ -92,8 +92,8 @@ header {
   left: 45%;
   margin-right: 522px;
 }
+.espec img:hover{
+  position: relative;
+ width: 14%;
 
-/* minha-foto {
-  display: flex;
-  width: 100%;
-} */
+}
