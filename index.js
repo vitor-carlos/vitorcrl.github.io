@@ -1,4 +1,4 @@
-const reposToIgnore = []
+const reposToIgnore = ['vitorcrl/Projeto-Contatos',]
 
 
 const listComponents = data => {

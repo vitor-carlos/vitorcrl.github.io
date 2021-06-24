@@ -2,6 +2,7 @@
 <html lang="pt_br">
   <head>
     <meta charset="UTF-8" />
+     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
@@ -23,10 +24,8 @@
 
     <title>Vitor Carlos</title>
   </head>
- 
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!------- barra de cima------>
-  <body>
+  <body onload="getRepository()">
     <header>
       <div id="titulo" class="title">
         <h5>Portfolio de Vitor</h5>
@@ -82,8 +81,7 @@
     <div id="espec" class="espec">
       <h2>Conhecimentos:</h2>
       <h4>
-        <img  src="./images/mysqlPretoc.png" alt="MySql" /> Linguagem Sql, MySlq
-        Workbench. Noção avançada em Aquitetura, Modelagem e Produção
+        <img  src="./images/mysqlPretoc.png" alt="MySql" /> O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation
       </h4>
       <h4>
       <img src="./images/nodeJs.png" alt="NodeJs">
@@ -103,7 +101,7 @@
 <div id="projetos" class="projetos">
   
 <h2 class="name">Projetos no Github:</h2>
-
+<div id="allProjects"></div>
 </div>
 <script src="./index.js"></script>
 
