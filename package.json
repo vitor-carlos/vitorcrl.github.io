@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/vitor-carlos/Create-Portfolio#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^3.4.1",
     "jquery": "^3.6.0"
   },

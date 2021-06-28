@@ -2,6 +2,9 @@ html {
   overflow-x: hidden;
 }
 
+section {
+  margin-bottom: 170px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -99,38 +102,53 @@ header {
 
 }
 
-  @media (max-width: 930px) {
-    #allProjects {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
 
-    #skills {
-        margin-top: 200px;
-        height: auto;
-    }
 
-    .project {
-        margin-bottom: 30px;
-    }
 
-    #projects {
-        margin-top: 300px;
-    }
 
-    .skill {
-        height: 100px;
-    }
 
-    #contact {
-        margin-top: 30px;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-    }
 
-    #languages {
-        margin-bottom: 23px;
-    }
-}
+
+
+
+
+  #allProjects {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       margin: 2% 27% 2%;
+       
+   }
+ 
+ 
+ .projetos p {
+       display: block;
+       flex-direction: column;
+       margin: 2% 27% 2%;
+       
+   }
+ 
+   .allProjects skills {
+       margin-top: 200px;
+       height: auto;
+   }
+ 
+   .allProjects projectTitle {
+       margin-bottom: 30px;
+       left: 45%;
+       margin: 2% 27% 2%;
+       
+       
+   }
+ 
+   .allProjects projects {
+       margin-top: 300px;
+   }
+ 
+   .skill {
+       height: 100px;
+   }
+ }
+ 
+
+
