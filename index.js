@@ -1,4 +1,4 @@
-const reposToIgnore = ['vitorcrl/Projeto-Contatos','vitorcrl/GoBarber', 'vitorcrl/DescomplicandoHelm', 'vitorcrl/vitorcrl']
+const reposToIgnore = ['vitorcrl/Projeto-Contatos','vitorcrl/GoBarber', 'vitorcrl/DescomplicandoHelm', 'vitorcrl/vitorcrl','vitorcrl/frontend-cliente']
 
 
 const listComponents = data => {
@@ -7,7 +7,7 @@ const listComponents = data => {
          <div   class="project" alt="One of my project and they description">
              <a class="repoUrl" href="${repo.html_url}" target="blank" id="projectTitle">${repo.full_name}</a>
              <p id="description">${repo.description}</p>
-             <span id="language">${repo.language ? repo.language : ' - '}</span>
+             <span id="language">Linguagem:${repo.language ? repo.language : ' - '}</span>
          </div>
          `)
     }).join('')

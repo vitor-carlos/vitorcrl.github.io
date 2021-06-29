@@ -102,53 +102,59 @@ header {
 
 }
 
+#allProjects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2% 27% 2%;
+  
+}
 
+.project {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: #0c7c3f;
+  border:#0c7c3f 1.25px solid;
+  border-radius: 4px;
+  width: 700px;
+  padding: 10px 0;
+  height: 100%;
+  margin-bottom: 15px;
+}
+.allProjects a {
+  color: var(#6842c2);
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0 52 0 0;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+.allProjects a:hover {
+  color: rgb(131, 111, 255);
+  transition: color 200ms;
+}
 
+#description {
+  min-height: 10px;
+  margin: 10px 10px;
+  font-size: 18px;
+}
 
+#language {
+  margin-bottom: 2px;
+  width: fit-content;
+  margin: auto;
+  color: var(#6842c2);
+}
 
-
-
-
-
-
-
-  #allProjects {
-       display: flex;
-       flex-direction: column;
-       flex-wrap: wrap;
-       margin: 2% 27% 2%;
-       
-   }
- 
- 
- .projetos p {
+ .allProjects projetos p {
        display: block;
        flex-direction: column;
        margin: 2% 27% 2%;
-       
+       font-size: 25rem;
    }
- 
-   .allProjects skills {
-       margin-top: 200px;
-       height: auto;
-   }
- 
-   .allProjects projectTitle {
-       margin-bottom: 30px;
-       left: 45%;
-       margin: 2% 27% 2%;
-       
-       
-   }
- 
-   .allProjects projects {
-       margin-top: 300px;
-   }
- 
-   .skill {
-       height: 100px;
-   }
- }
- 
+
+
 
 
