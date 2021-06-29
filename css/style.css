@@ -99,7 +99,6 @@ header {
 .espec img:hover{
   position: relative;
  width: 14%;
-
 }
 
 #allProjects {
@@ -157,4 +156,25 @@ header {
 
 
 
+#tec {
+  margin: 2% 27% 2%;
+}
+#tec  h2{
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+   #tec h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    line-height: 25px;
+    color:#9932cc ;
+  }
+  #tec h3 {
+    font-size: 2rem;
+    margin-bottom: 300px;
+    line-height: 2px;
+    color:#9932cc ;
+  }
 
