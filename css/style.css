@@ -160,7 +160,7 @@ header {
   margin: 2% 27% 2%;
 }
 #tec  h2{
-  font-size: 4rem;
+  font-size: 5rem;
   display: block;
   margin-bottom: 15px;
 }
@@ -170,11 +170,13 @@ header {
     margin-bottom: 10px;
     line-height: 25px;
     color:#9932cc ;
+    font-weight: bold;
   }
   #tec h3 {
     font-size: 2rem;
     margin-bottom: 300px;
     line-height: 2px;
     color:#9932cc ;
+    font-weight: bold;
   }
 
