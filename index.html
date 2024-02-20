@@ -1,130 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-  <head>
-    <meta charset="UTF-8" />
-     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap CSS -->
-    <link rel="shortcut icon" href="./images/logo/favicon.ico" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
-      crossorigin="anonymous"
-    />
-    <meta name="theme-color" content="#8257e5" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    
+    <title>Vitor Carlos - Portfólio</title>
+</head>
+<body>
 
-    <title>Vitor Carlos</title>
-  </head>
-  <!------- barra de cima------>
-  <body onload="getRepository()">
-    <header>
-      <section id="titulo" class="title">
-        <h5>Portfolio de Vitor</h5>
-      </section>
-    </header>
-    <section id="Wrapper" class="wrapper">
-      <div id="minha-foto">
-        <img
-          src="./images/minha.png"
-          class="rounded float-left"
-          alt="Vitor Carlos"
-        />
-      </div>
-      <h1>Vitor Carlos de Souza</h1>
-      <h3>
-        Aluno Universitário de Engenharia da Computação na
-        <a href="https://esamc.br/unidade/Santos/" ´ target="_blank"
-          >Esamc Santos</a
-        >
-        8/10. Área de atuação como desevolvedor Full Stack, DBA MySql
-        Essentials, Programador nas Linguagens JS, TS, React, React Native.
-      </h3>
+<header>
+    <nav>
+        <div class="logo">
+            <h1>Vitor Carlos</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about" class="about">
+        <img src="./images/minha.png" alt="Vitor Carlos" class="profile-image">
+        <div class="about-content">
+            <h2>Sobre Mim</h2>
+            <p>Aluno de Engenharia da Computação na Esamc Santos, apaixonado por desenvolvimento Full Stack e tecnologias emergentes.</p>
+        </div>
     </section>
 
-    <section id="links-footer" class="links">
-      <a href="https://github.com/vitorcrl" target="_blank">
-        <img src="./images/logo/github32.png" alt="GitHub" />
-        Github</a
-      >
-
-      <a href="https://www.facebook.com/vitor.carlos.5/" target="_blank">
-        <img src="./images/logo/facebook.png" alt="Facebook" />
-        Facebook</a
-      >
-
-      <a
-        href="https://www.linkedin.com/in/vitor-carlos-915766180/"
-        target="_blank"
-      >
-        <img src="./images/logo/linkedin32.png" alt="LinKedin" />
-        LinKedin</a
-      >
-
-      <a
-        href="https://wa.me/5513991469479?text=Olá%20,%20Vitor"
-        target="_blank"
-      >
-        <img src="./images/logo/whatsapp32.png" alt="GitHub" />
-        WhatsApp</a
-      >
-      </section>
-
-    <section id="espec" class="espec">
-      <h2>Conhecimentos:</h2>
-      <h4>
-        <img  src="./images/mysqlPretoc.png" alt="MySql" />O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation.
-      <img src="./images/nodeJs.png" alt="NodeJs">
-      Programação em Node JS. Adicionar conteudoNode.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.
-     </h4>
-     <h4>    
-     <img src="./images/reactPreto.png" alt="React">
-      React Native é uma biblioteca Javascript criada pelo Facebook. É usada para desenvolver aplicativos para os sistemas Android e iOS de forma nativa.
-    </h4>
-    <h4>
-   <img src="./images/dockerLogoPreto.png" alt="Docker">
-   Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres.
-    </h4>
+    <section id="projects" class="projects">
+        <h2>Projetos</h2>
+        <div id="allProjects" class="project-container">
+            <!-- Seus projetos serão inseridos aqui via JavaScript -->
+        </div>
     </section>
 
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <p>Interessado em colaborar ou saber mais? Entre em contato através das redes abaixo.</p>
+        <div class="social-links">
+            <!-- Links para suas redes sociais -->
+            <a href="https://github.com/vitorcrl" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/vitor-carlos-915766180/" target="_blank">LinkedIn</a>
+            <a href="https://wa.me/5513991469479" target="_blank">WhatsApp</a>
+        </div>
+    </section>
+</main>
 
-<section id="projects" class="slide-top" alt="section whit my project">
+<footer>
+    <p>&copy; 2024 Vitor Carlos. Todos os direitos reservados.</p>
+</footer>
 
-
-    <h2>Projetos no Github:</h2>
-<div id="allProjects" class="allProjects">
-
-
-<script src="./index.js">
-</script>
-
-</div>
-</section>
-
-<section id="tec" class="tec">
-
-
-  <h2>Tecnologias:</h2>
-  <div class="visible">
-    <h4> - Express  - Postgres - ORM</h4>
-    <h4>  - Node - Body-parser - Babel</h4>
-    <h4> - Eslint  - Jsonwebtoken - TypeOrm </h4>
-    <h4>- React - React Native - Sqlite</h4>
-    <h4>- Java-Script - BcryptJs - Docker</h4>
-    <h3>- TypeScript - Prettier  - Express</h3>
-
-  </div>
-</section>
-
-
-
-  </body>
+<script src="./index.js"></script>
+</body>
 </html>
