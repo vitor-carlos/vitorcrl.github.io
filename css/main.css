@@ -1,56 +1,93 @@
-:root {
-  --color-background: #f0f0f7; /*variaveis do css*/
-  --color-primary-lighter: #9871f5;
-  --color-primary-light: #916bea;
-  --color-primary: #8257e5;
-  --color-primary-dark: #774dd6;
-  --color-primary-darker: #6842c2;
-  --color-secondary: #04d361;
-  --color-secondary-dark: #04bf58;
-  --color-title-in-primary: #ffffff;
-  --color-text-in-primary: #d4c2ff;
-  --color-text-title: #32264d;
-  --color-text-complement: #9c98a6;
-  --color-text-base: #6a6180;
-  --color-line-in-white: #e6e6f0;
-  --color-input-background: #f8f8fc;
-  --color-button-text: #ffffff;
-  --color-box-base: #ffffff;
-  --color-box-footer: #fafafc;
-  --color-small-info: #c1bccc;
-  --color-teste: #9932cc;
-  --color-fundo: #363636;
-  --color-title: #4f4f4f;
-  font-size: 60%; /* controle das medidas rem */
-}
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-  text-align: center;
-}
 
 body {
-  background: var( --color-primary-darker);
-  display:flex;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #27213C; /* Roxo escuro para o texto */
+  background-color: #FDFCDC; /* Creme claro para o fundo */
+}
+
+header {
+  background-color: #7C9EB2; /* Azul suave para o cabeçalho */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  padding: 1rem 2rem;
 }
-body,
-input,
-button,
-textarea {
-  /*font: 500 1.6rem Poppins;*/
-  font-size:1.6rem ;
-  color: var( --color-primary-darker);
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #F07167; /* Coral para o título do logo */
 }
-/*modificacao de tamanho para proporcao */
-@media (min-width: 600px) {
-  :root {
-    font-size: 62.5%; /*todo 1rem vai ser relativo a 10px */
-  }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #27213C; /* Mantendo o roxo escuro para os links */
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FED9B7; /* Pêssego para hover nos links */
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.about, .projects, .contact {
+  margin-bottom: 3rem;
+  background-color: #fff; /* Fundo branco para seções */
+  padding: 2rem;
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+.profile-image {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #7C9EB2; /* Borda azul suave para a imagem de perfil */
+}
+
+.about-content, .project-container, .social-links {
+  text-align: left;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #F07167; /* Coral para títulos das seções */
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #7C9EB2; /* Azul suave para o rodapé */
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+footer p {
+  margin: 0;
+  color: #FDFCDC; /* Creme claro para o texto do rodapé */
 }
