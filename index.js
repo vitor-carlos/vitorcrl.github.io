@@ -28,7 +28,23 @@ const reposToIgnore = [
       })
       .catch(error => console.error('Erro ao buscar repositórios:', error));
   }
-  
-  // Chama getRepository ao carregar a página
   getRepository();
+
+  function listStacks() {
+    const stacks = {
+        "Frontend": 90,
+        "Backend": 85,
+        "Banco de Dados": 80,
+    };
+
+    const stackList = document.getElementById('stackList');
+
+    Object.keys(stacks).forEach(stack => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${stack} - Pontuação: ${stacks[stack]}`;
+        stackList.appendChild(listItem);
+    });
+}
+
+listStacks();
   
