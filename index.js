@@ -32,16 +32,27 @@ const reposToIgnore = [
 
   function listStacks() {
     const stacks = {
-        "Frontend": 90,
-        "Backend": 85,
-        "Banco de Dados": 80,
+        "Frontend": '5/10 Pelo que pode se ver nesse Portfólio.',
+        "Backend": '7/10 Minha área favorita, tenho bastante experiência porém sempre existe algo para aprender.',
+        "Database": '8/10 Experiência considerável, sempre buscando aprender mais na área.',
+        "TypeScript": '7/10 Tenho habilidades sólidas em TypeScript',
+        "JavaScript": '6/10 Apesar de ter preferência em TS desenvolvo bem para JS.',
+        "Node.js": 9,
+        "TypeORM": 8,
+        "NestJS": 6,
+        "GoLang": '5 no momento estou aprendendo e gostando bastante de utilizar.',
+        "TDD": 80,
+        "SQL": 80,
+        "PostgresSQL": 80,
+        "Firebase": 80,
+        "Angular": 80,
     };
 
     const stackList = document.getElementById('stackList');
 
     Object.keys(stacks).forEach(stack => {
         const listItem = document.createElement('li');
-        listItem.textContent = `${stack} - Pontuação: ${stacks[stack]}`;
+        listItem.textContent = `${stack} - Nível de Proficiência: ${stacks[stack]}`;
         stackList.appendChild(listItem);
     });
 }
