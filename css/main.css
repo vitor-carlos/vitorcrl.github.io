@@ -30,7 +30,7 @@ nav {
 .logo h1 {
   margin: 0;
   font-size: 1.5rem;
-  color: #d09693; /* Coral para o título do logo */
+  color: #1f35af; /* Coral para o título do logo */
 }
 
 .nav-links {
@@ -67,7 +67,7 @@ main {
   max-width: 150px;
   border-radius: 50%;
   margin-bottom: 1rem;
-  border: 3px solid #000000; 
+  border: 3px solid #2899ce; 
 }
 
 .about-content, .project-container, .social-links {
@@ -76,7 +76,7 @@ main {
 
 h2 {
   margin-bottom: 1rem;
-  color: #d09693;
+  color: #1f35af;
   font-size: 2.2rem;
   font-family: 'Montserrat', sans-serif;
 }
