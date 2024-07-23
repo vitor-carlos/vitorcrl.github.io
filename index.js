@@ -1,17 +1,27 @@
 const reposData = [
   {
-    full_name: 'Github Projeto 1',
-    html_url: 'https://github.com/vitorcrl/project1',
+    full_name: 'Rastrabilidade de Fibras',
+    html_url: null,
     description: 'Descrição do project1',
-    language: 'JavaScript'
-  },
-  {
-    full_name: 'Curso Rodrido Manguinho - Clean Code',
-    html_url: 'https://github.com/vitorcrl/clean-node-api',
-    description: 'Neste projeto, desenvolvi uma API RESTful utilizando Node.js e TypeScript, aplicando as melhores práticas de Clean Code, TDD, DDD, Clean Architecture e SOLID. A API foi projetada para ser altamente modular, fácil de manter e com 100% de cobertura de testes automatizados, garantindo sua confiabilidade e qualidade. Utilizei Express como framework web e Jest para os testes automatizados. O objetivo foi criar uma API robusta e escalável, seguindo uma arquitetura bem definida e desacoplada.',
     language: 'TypeScript',
     percentage: 100,
     img: null
+  },
+  {
+    full_name: 'Integração de Apis com Whatsapp',
+    html_url: null,
+    description: 'Foi desenvolvido um sistema que permite a integração de Apis com o Whatsapp, utilizando o Node.js e JavaScript. O sistema foi projetado para ser escalável e modular, permitindo a adição de novas funcionalidades sem a necessidade de alterar o código existente. A arquitetura do sistema foi projetada de forma modular, facilitando a manutenção e a evolução do código.',
+    language: 'JavaScript',
+    percentage: 100,
+    img: null
+  },
+  {
+    full_name: 'Curso Rodrido Branas - Clean Code',
+    html_url: 'https://github.com/vitorcrl/cccat14_1',
+    description: 'Neste projeto, desenvolvi uma API RESTful utilizando Node.js e TypeScript, aplicando as melhores práticas de Clean Code, TDD, DDD, Clean Architecture e SOLID. A API foi projetada para ser altamente modular, fácil de manter e com 100% de cobertura de testes automatizados, garantindo sua confiabilidade e qualidade. Utilizei Express como framework web e Jest para os testes automatizados. O objetivo foi criar uma API robusta e escalável, seguindo uma arquitetura bem definida e desacoplada.',
+    language: 'TypeScript',
+    percentage: 70,
+    img: './images/project/clean-arch.png'
   },
   {
     full_name: 'RocketSeat GoStack - Gobarber Web',
@@ -28,19 +38,16 @@ const listComponents = data => {
   return data.map(repo => {
     return `
       <div class="project">
-        <a class="repoUrl" href="${repo.html_url}" target="_blank">${repo.full_name}</a>
-        <br>
-        <p class="description"> <strong>Descrição:</strong> ${repo.description || 'Descrição não disponível.'}</p>
-        <a class="language"><strong>Linguagem:</strong> ${repo.language || '-'}</a>
-        <p class="percentage"> <strong>Porcentagem de conclusão:</strong> ${repo.percentage || 0}%</p>
+        ${repo.html_url ? `<a class="repoName" href="${repo.html_url}" target="_blank">${repo.full_name}</a>` : `<p class="repoName"> <strong>${repo.full_name}</strong> </p>`}
+        <p class="description"><strong>Descrição:</strong> ${repo.description || 'Descrição não disponível.'}</p>
+        <p class="language"><strong>Linguagem:</strong> ${repo.language || '-'}</p>
+        <p class="percentage"><strong>Porcentagem de conclusão:</strong> ${repo.percentage || 0}%</p>
         ${repo.img ? `<img class="img small-img" src="${repo.img}" alt="Imagem do projeto">` : ''}
-        <hr> 
-        <br>
+        <hr>
       </div>
     `;
   }).join('');
 };
-
 function getRepository() {
   const reposDiv = document.getElementById('allProjects');
   reposDiv.innerHTML = listComponents(reposData);
