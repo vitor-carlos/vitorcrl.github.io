@@ -134,3 +134,6 @@ body {
   width: 70%; /* Ajusta o tamanho para 70% do tamanho original */
   height: auto; /* Mantém a proporção da imagem */
 }
+.repoName {
+  font-size: 120%;
+}
