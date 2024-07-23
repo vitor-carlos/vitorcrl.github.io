@@ -130,3 +130,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.small-img {
+  width: 70%; /* Ajusta o tamanho para 70% do tamanho original */
+  height: auto; /* Mantém a proporção da imagem */
+}
