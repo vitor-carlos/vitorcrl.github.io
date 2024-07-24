@@ -8,9 +8,9 @@ const reposData = [
     img: null
   },
   {
-    full_name: 'Integração de Apis com Whatsapp',
+    full_name: 'Integração de APIs com Whatsapp',
     html_url: null,
-    description: 'Foi desenvolvido um sistema que permite a integração de Apis com o Whatsapp, utilizando o Node.js e JavaScript. O sistema foi projetado para ser escalável e modular, permitindo a adição de novas funcionalidades sem a necessidade de alterar o código existente. A arquitetura do sistema foi projetada de forma modular, facilitando a manutenção e a evolução do código.',
+    description: 'Desenvolvi um sistema que permite a integração de Apis com o Whatsapp, utilizando o Node.js e JavaScript. O sistema foi projetado para ser escalável e modular, permitindo a adição de novas funcionalidades sem a necessidade de alterar o código existente. A arquitetura do sistema foi projetada de forma modular, facilitando a manutenção e a evolução do código. O metodo que utilizamos pra não perder sincronia foi o uso de Filas, neste caso utilizei as queues da AWS com a configuração FiFo para evitar a perda de mensagens e sincronização .',
     language: 'JavaScript',
     percentage: 100,
     img: null
@@ -57,8 +57,8 @@ getRepository();
 
 function listStacks() {
   const stacks = {
-      "Frontend": '5/10 Pelo que pode se ver nesse Portfólio.',
       "Backend": '7/10 Minha área favorita, tenho bastante experiência porém sempre existe algo para aprender.',
+      "Frontend": '5/10 Pelo que pode se ver nesse Portfólio.',
       "Database": '8/10 Experiência considerável, sempre buscando aprender mais na área.',
       "TypeScript": '7/10 Tenho habilidades sólidas em TypeScript',
       "JavaScript": '6/10 Apesar de ter preferência em TS desenvolvo bem para JS.',
