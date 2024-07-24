@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,20 +7,23 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif; /* Use Ubuntu como fonte padrão */
   line-height: 1.6;
   color: #27213C; /* Roxo escuro para o texto */
   background-color: #FDFCDC; /* Creme claro para o fundo */
+  background-image: url('../images/noite3.png'); /* Verifique se o caminho está correto */
+  background-size: 100%; /* Ajusta o tamanho para cobrir a tela */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
 }
 
 header {
   background-color: #537895; /* Azul suave para o cabeçalho */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  background-image: url('../images/gradient4.png'); /* Adicione o gradiente no final do header */
+  background-image: url('../images/noite4.png'); /* Adicione o gradiente no final do header */
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 
 nav {
   display: flex;
@@ -30,7 +35,7 @@ nav {
 .logo h1 {
   margin: 0;
   font-size: 1.5rem;
-  color: #1f35af; /* Coral para o título do logo */
+  color: #FDFCDC; /* Coral para o título do logo */
 }
 
 .nav-links {
@@ -41,7 +46,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #27213C; /* Mantendo o roxo escuro para os links */
+  color: #FED9B7; /* Mantendo o roxo escuro para os links */
   transition: color 0.3s ease;
 }
 
@@ -55,9 +60,9 @@ main {
   padding: 0 1rem;
 }
 
-.about, .projects, .contact,.stacks {
+.about, .projects, .contact, .stacks {
   margin-bottom: 3rem;
-  background-color: #fff; /* Fundo branco para seções */
+  background-color: rgba(255, 235, 221, 0.8); 
   padding: 2rem;
   border-radius: 8px; /* Adiciona bordas arredondadas */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
@@ -78,7 +83,6 @@ h2 {
   margin-bottom: 1rem;
   color: #1f35af;
   font-size: 2.2rem;
-  font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -90,7 +94,7 @@ footer {
   text-align: center;
   padding: 1rem 0;
   box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
-  background-image: url('../images/gradient4.png'); /* Adicione o gradiente no final do header */
+  background-image: url('../images/noite4.png'); /* Adicione o gradiente no final do header */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -114,7 +118,7 @@ footer p {
 }
 
 .stack-list li::before {
-  content: "★"; 
+  content: "•";
   color: var(--color-primary); 
   margin-right: 0.5rem;
 }
@@ -122,18 +126,60 @@ footer p {
 .stack-list li span {
   color: var(--color-primary); 
 }
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #27213C;
-  background-image: url('../images/gradient2.png'); /* Verifique se o caminho está correto */
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 .small-img {
   width: 70%; /* Ajusta o tamanho para 70% do tamanho original */
   height: auto; /* Mantém a proporção da imagem */
 }
+
 .repoName {
   font-size: 120%;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
