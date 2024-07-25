@@ -39,7 +39,7 @@ const listComponents = data => {
     return `
       <div class="project">
         ${repo.html_url ? `<a class="repoName" href="${repo.html_url}" target="_blank">${repo.full_name}</a>` : `<p class="repoName"> <strong>${repo.full_name}</strong> </p>`}
-        <p class="description"><strong>Descrição:</strong> ${repo.description || 'Descrição não disponível.'}</p>
+        <p class="description justified"><strong>Descrição:</strong> ${repo.description || 'Descrição não disponível.'}</p>
         <p class="language"><strong>Linguagem:</strong> ${repo.language || '-'}</p>
         <p class="percentage"><strong>Porcentagem de conclusão:</strong> ${repo.percentage || 0}%</p>
         ${repo.img ? `<img class="img small-img" src="${repo.img}" alt="Imagem do projeto">` : ''}
