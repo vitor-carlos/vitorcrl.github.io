@@ -72,7 +72,7 @@ main {
   max-width: 150px;
   border-radius: 50%;
   margin-bottom: 1rem;
-  border: 3px solid #2899ce; 
+  border: 3px solid #8F0000; 
 }
 
 .about-content, .project-container, .social-links {
@@ -81,8 +81,8 @@ main {
 
 h2 {
   margin-bottom: 1rem;
-  color: #1f35af;
-  font-size: 2.2rem;
+  color: #82695B;
+  font-size: 2.5rem;
 }
 
 p {
@@ -90,7 +90,6 @@ p {
 }
 
 footer {
-  background-color: #7C9EB2; /* Azul suave para o rodapé */
   text-align: center;
   padding: 1rem 0;
   box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
@@ -134,6 +133,10 @@ footer p {
 
 .repoName {
   font-size: 120%;
+}
+
+.justified {
+  text-align: justify;
 }
 
 .ubuntu-light {
