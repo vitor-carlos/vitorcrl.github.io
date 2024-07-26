@@ -139,6 +139,15 @@ footer p {
   text-align: justify;
 }
 
+.social-links a {
+  margin-right: 15px; 
+  text-decoration: none;
+}
+
+.social-links a:last-child {
+  margin-right: 0;
+}
+
 .ubuntu-light {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
