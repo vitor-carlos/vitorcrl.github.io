@@ -93,7 +93,7 @@ footer {
   text-align: center;
   padding: 1rem 0;
   box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
-  background-image: url('../images/noite4.png'); /* Adicione o gradiente no final do header */
+  background-image: url('../images/noite4.png'); /* Adicione imagem de fundo no final do header */
   background-size: cover;
   background-repeat: no-repeat;
 }
