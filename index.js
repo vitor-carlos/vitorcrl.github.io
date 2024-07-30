@@ -57,29 +57,38 @@ getRepository();
 
 function listStacks() {
   const stacks = {
-      // "Backend": '7/10 Minha área favorita, tenho bastante experiência porém sempre existe algo para aprender.',
-      // "Frontend": '5/10 Pelo que pode se ver nesse Portfólio.',
-      // "Database": '8/10 Experiência considerável, sempre buscando aprender mais na área.',
-      // "TypeScript": '7/10 Tenho habilidades sólidas em TypeScript',
-      // "JavaScript": '6/10 Apesar de ter preferência em TS desenvolvo bem para JS.',
-      // "Node.js": 9,
-      // "TypeORM": 8,
-      // "NestJS": 6,
-      // "GoLang": '5 no momento estou aprendendo e gostando bastante de utilizar.',
-      // "TDD": 80,
-      // "SQL": 80,
-      // "PostgresSQL": 80,
-      // "Firebase": 80,
-      // "Angular": 80,
-      "Em breve": 'Novidades.',
+    "Backend": 100,
+    "SQL": 92,
+    "Scrum": 90,
+    "TypeScript": 85,
+    "Database": 80,
+    "JavaScript": 77,
+    "TDD": 75,
+    "Firebase": 70,
+    "Frontend":60,
+    "GoLang": 45,
   };
 
-  const stackList = document.getElementById('stackList');
+  const stackList1 = document.getElementById('stackList1');
+  const stackList2 = document.getElementById('stackList2');
 
-  Object.keys(stacks).forEach(stack => {
-      const listItem = document.createElement('li');
-      listItem.textContent = `${stack} - Nível de Proficiência: ${stacks[stack]}`;
-      stackList.appendChild(listItem);
+  Object.keys(stacks).forEach((stack, index) => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `
+      <span><strong>${stack}:</strong></span>
+      <div class="progress-bar-container">
+        <div class="progress-bar">
+          <span class="progress-bar-fill" style="width: ${stacks[stack]}%;"></span>
+        </div>
+        <span class="percentage-text">${stacks[stack]}%</span>
+      </div>
+    `;
+
+    if (index < 5) {
+      stackList1.appendChild(listItem);
+    } else {
+      stackList2.appendChild(listItem);
+    }
   });
 }
 
