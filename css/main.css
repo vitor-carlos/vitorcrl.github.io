@@ -58,7 +58,7 @@ main {
   padding: 0 1rem;
 }
 
-.about, .projects, .contact, .stacks {
+.about, .projects, .contact, .stacks, .experience {
   margin-bottom: 3rem;
   background-color: rgba(255, 235, 221, 0.8); 
   padding: 2rem;
@@ -218,4 +218,112 @@ footer p {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-style: italic;
+}
+
+
+.experience-container,
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os cards */
+  gap: 1.5rem; /* Espaçamento entre os cards */
+  padding: 1rem 0; /* Adiciona um pouco de padding vertical */
+}
+
+.card {
+  background-color: #FFFFFF; /* Fundo branco para destacar do creme da seção */
+  border-radius: 8px; /* Mesmo arredondamento das seções */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra inicial mais suave */
+  width: 380px; /* Largura fixa para os cards */
+  overflow: hidden; /* Para a imagem não vazar */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Transições para hover */
+  cursor: pointer; /* Indica que é clicável/interativo */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Card "flutua" um pouco para cima */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Novo wrapper para a imagem */
+.card-image-wrapper {
+  width: 100%;
+  height: 180px;
+  display: flex; /* Para centralizar a imagem dentro dele */
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Pequeno padding para a imagem */
+  border-bottom: 1px solid #eee; /* Linha de separação discreta */
+}
+
+.card-image {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o wrapper */
+  max-height: 100%; /* Garante que a imagem não ultrapasse o wrapper */
+  object-fit: contain; /* Ajusta a imagem para caber, mantendo proporção */
+}
+
+.card-content {
+  padding: 1rem;
+  flex-grow: 1; /* Faz o conteúdo ocupar o espaço */
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Para possíveis animações internas */
+}
+
+.card-content h3 {
+  font-size: 1.25rem;
+  color: #82695B; /* Cor do h2 */
+  margin-bottom: 0.25rem;
+  transition: color 0.3s ease; /* Transição para o texto */
+}
+
+.card:hover .card-content h3 {
+  color: #537895; /* Mudar cor do título no hover, por exemplo */
+}
+
+.card-content h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #27213C; /* Cor do texto principal */
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #27213C; /* Cor do texto principal */
+  flex-grow: 1; /* Empurra as stacks para o final */
+  margin-bottom: 1rem;
+  text-align: justify; /* Mantém seu estilo justificado */
+}
+
+.card-stacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto; /* Alinha no fundo do card */
+  opacity: 0.9; /* Começa um pouco transparente */
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-stacks {
+  opacity: 1; /* Fica totalmente visível no hover */
+}
+
+.stack-tag {
+  background-color: #537895; /* Cor do header (azul) */
+  color: #FDFCDC; /* Cor do fundo (creme) */
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-weight: 500;
+  white-space: nowrap; /* Evita quebras de linha nas tags */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.stack-tag:hover {
+    background-color: #82695B; /* Mudar cor da tag no hover */
+    transform: translateY(-2px); /* Efeito sutil na tag */
 }
