@@ -9,8 +9,8 @@ body {
   line-height: 1.6;
   color: #27213C; /* Roxo escuro para o texto */
   background-color: #FDFCDC; /* Creme claro para o fundo */
-  background-image: url('../images/noite3.png'); /* Verifique se o caminho está correto */
-  background-size: 100%; /* Ajusta o tamanho para cobrir a tela */
+  background-image: url('../images/gradient3.png'); /* Verifique se o caminho está correto */
+  background-size: cover; /* Ajusta o tamanho para cobrir a tela */
   background-repeat: no-repeat;
   background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
 }
