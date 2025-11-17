@@ -39,30 +39,40 @@ const experienceData = [
     subtitle: "Desenvolvedor Back-end — 2024–Atual",
     description:
       "Atuei junto ao líder técnico em um sistema complexo com monólito + BFF + microsserviços, utilizando Node.js, Prisma, TypeScript e Django. Foco em integrações externas, pipelines e handlers críticos.",
-    stacks: ["Node.js", "TypeScript", "Prisma", "Django", "AWS"],
+    stacks: ["Python", "Node.js", "TypeScript", "Prisma", "Django", "AWS", "Microservices"],
     img: "./images/project/opstream.png",
     bgColor: "#ffffffff",
   },
   {
     title: "YOFC Brasil",
-    subtitle: "Líder Técnico Parcial — 2023–2025",
+    subtitle: "Líder Técnico Parcial — 2023–Atual",
     description:
       "Desenvolvi grande parte do sistema interno da YOFC Brasil, líder global em fibra óptica. Foco em NestJS, Node.js, TypeORM e integrações com sistemas da matriz global.",
-    stacks: ["NestJS", "Node.js", "TypeORM", "PostgreSQL"],
+    stacks: ["NestJS", "Node.js", "TypeORM", "PostgreSQL","TypeScript"],
     img: "./images/project/yofc.png",
+    bgColor: "#ffffffff",
+  },
+  {
+    title: "MPT | Rastreabilidade de Fibras",
+    subtitle: "Desenvolvedor Full-Stack — 2022–2023",
+    description:
+      "Desenvolvimento de um sistema industrial completo para rastrear insumos, controlar produção, medir eficiência (OEE) e gerar dashboards de performance. Atuei no fluxo completo da fábrica, garantindo integração, estabilidade e escalabilidade.",
+    stacks: ["TypeScript", "Angular", "Node.js", "Jest"],
+    img: "./images/project/fibers.png",
+    bgColor: "#ffffffff",
+  },
+    {
+    title: "Farofa Dalena",
+    subtitle: "Desenvolvedor Back-End — 2021–2021",
+    description:
+      "No meu início de carreira, pude fazer parte da criação do Sistema interno para controle de produção, estoques, movimentação de insumos e monitoramento de processos industriais.",
+    stacks: ["JavaScript", "Angular", "Node.js", "Jest"],
+    img: "./images/project/dalena.png",
     bgColor: "#ffffffff",
   },
 ];
 const projectData = [
-  {
-    title: "Rastreabilidade de Fibras",
-    subtitle: "Sistema industrial",
-    description:
-      "Sistema para gestão do fluxo de fábrica, rastreabilidade e análise de dados com dashboards e métricas OEE.",
-    stacks: ["TypeScript", "React", "Node.js", "Jest"],
-    img: "./images/project/fibers.png",
-    bgColor: "#ffffffff",
-  },
+
   {
     title: "Integração WhatsApp",
     subtitle: "Mensageria com filas AWS FIFO",
