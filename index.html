@@ -7,17 +7,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 
-    <title>Vitor Carlos - Portfólio</title>
+    <title>Vitor Souza - Portfólio</title>
 </head>
 <body>
 
-<header>
-    <nav>
-        <div class="logo">
+<header class="header-modern">
+    <nav class="nav-modern">
+        <div class="logo-modern">
+            <span class="logo-dot"></span>
             <h1>Vitor Souza</h1>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links-modern">
             <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#experience">Experiência</a></li>
             <li><a href="#projects">Projetos</a></li>
             <li><a href="#stacks">Stacks</a></li>
             <li><a href="#contact">Contato</a></li>
@@ -25,18 +27,47 @@
     </nav>
 </header>
 
+
 <main>
     <section id="about" class="about">
-        <img src="./images/minh2.png" alt="Vitor Carlos" class="profile-image">
-        <div class="about-content justified">
-            <h2>Sobre Mim</h2>
-            <p >Prazer, sou Vitor Souza! Bem-vindo ao meu site! Sou Engenheiro de Computação e atualmente atuo como desenvolvedor back-end na FinderUp, onde trabalho com uma equipe completa em projetos complexos e stacks variadas priorizando a funcionalidade dos clientes. Estou liderando um projeto com dois desenvolvedores, focado em otimizar processos e entregas.</p>
-            <p>Com quase 3 anos de experiência atuando como líder de projeto e desenvolvedor backend, desenvolvi habilidades em Node.js, TypeORM, NestJS, GoLang, além de testes automatizados e unitários, e bancos de dados relacionais e não relacionais. Tenho especialização em TypeScript e JavaScript, e minha área de preferência é o back-end, onde já desenvolvi inúmeras aplicações.</p>
-            <p>Estou sempre em busca de aprimorar minhas habilidades em gestão e desenvolvimento de software, focando em soluções eficientes e de alta qualidade. Recentemente, tenho estudado Clean Code e Design Patterns, percebendo grandes melhorias nas minhas consultas complexas e otimização de banco de dados.</p>
-            <p>Além da tecnologia, sou apaixonado por veículos, especialmente carros japoneses. Tenho um Honda Civic, pelo qual sou apaixonado e estou sempre pensando em futuras modificações. E também tenho um gosto para arte e pinturas clássicas, como pode se ver neste site!</p>
-            <p>Estou sempre aberto a novas oportunidades e desafios. Entre em contato comigo para discutirmos como posso contribuir para a sua equipe!</p>  
-        </div>
-    </section>
+
+    <img src="./images/minh2.png" alt="Vitor Carlos" class="profile-image">
+
+    <div class="about-content justified">
+
+        <h2>Sobre Mim</h2>
+
+        <div class="section-divider"></div>
+
+        <h4 class="about-subtitle">
+            Desenvolvedor Back-end focado em soluções escaláveis e integrações complexas
+        </h4>
+
+        <p class="justified">
+            Sou desenvolvedor Back-end com foco em criar sistemas escaláveis, bem estruturados e orientados à performance. 
+            Tenho experiência prática em soluções industriais, integrações complexas, microsserviços e arquiteturas modernas 
+            utilizando Node.js, TypeScript, Python, AWS e boas práticas como SOLID, TDD e Clean Architecture.
+        </p>
+        
+        <p class="justified">
+            Atuei em projetos de alto impacto, desde sistemas industriais completos até plataformas corporativas com pipelines, 
+            mensageria, rastreabilidade e fluxos críticos. Gosto de transformar problemas complexos em soluções simples, 
+            estáveis e fáceis de evoluir.
+        </p>
+        
+        <p class="justified">
+            Busco sempre escrever código limpo, previsível e testável, além de contribuir para a organização técnica 
+            e evolução contínua dos times com que trabalho.
+        </p>
+
+        <ul class="about-highlights">
+            <li>⚙️ 4+ anos desenvolvendo sistemas industriais e corporativos</li>
+            <li>🔗 Experiência com microsserviços, pipelines e integrações complexas</li>
+            <li>🧪 Foco em Clean Architecture, SOLID e TDD</li>
+        </ul>
+
+    </div>
+</section>
 
     <section id="experience" class="experience">
         <h2>Experiência</h2>
@@ -64,7 +95,7 @@
         <p>Olá, caso queira me conhecer mais ou conversar sobre algum assunto, entre em contato através das redes abaixo. Estarei disponível!</p>
         <div class="social-links">
             <a href="https://github.com/vitorcrl" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/vitor-carlos-915766180/" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/vitor-souza-915766180/" target="_blank">LinkedIn</a>
             <a href="https://wa.me/5513991469479" target="_blank">WhatsApp</a>
         </div>
     </section>
