@@ -82,14 +82,76 @@
         <div id="allProjects" class="project-container">
         </div>
     </section>
-    <section id="stacks" class="stacks">
-        <h2>Conhecimentos</h2>
-        <div class="section-divider"></div>
-        <div class="stack-list-container" id="stackListContainer">
-          <ul id="stackList1" class="stack-list"></ul>
-          <ul id="stackList2" class="stack-list"></ul>
+
+    <section id="stacks" class="stacks modern-skills">
+    <h2>Conhecimentos</h2>
+    <div class="section-divider"></div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">🧩</span>
+                <h3>Backend</h3>
+            </div>
+            <p class="skill-tags">
+                Node.js · TypeScript · Python · FastAPI · Flask · Django · Microsserviços · Clean Architecture · SOLID
+            </p>
         </div>
-      </section>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">🗄️</span>
+                <h3>Banco de Dados</h3>
+            </div>
+            <p class="skill-tags">
+                PostgreSQL · SQL · Prisma · TypeORM · DynamoDB · Redis
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">☁️</span>
+                <h3>Cloud & DevOps</h3>
+            </div>
+            <p class="skill-tags">
+                AWS Lambda · SQS FIFO · ECS · RDS · CodePipeline · Docker
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">🔗</span>
+                <h3>Mensageria</h3>
+            </div>
+            <p class="skill-tags">
+                Kafka · RabbitMQ · SQS · Event-driven architecture
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">🧪</span>
+                <h3>Qualidade & Arquitetura</h3>
+            </div>
+            <p class="skill-tags">
+                TDD · Testes Unitários · Jest · Pytest · Design Patterns · Domain-driven Design
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">🎨</span>
+                <h3>Frontend</h3>
+            </div>
+            <p class="skill-tags">
+                React · Angular · HTML · CSS · UI Patterns
+            </p>
+        </div>
+
+    </div>
+</section>
+
       
     
 
@@ -126,9 +188,26 @@
 
 </main>
 
-<footer>
-    <p>&copy; 2024 Vitor Carlos. Todos os direitos reservados.</p>
+<footer class="footer">
+    <div class="footer-content">
+        <p>Desenvolvido por <strong>Vitor Souza</strong></p>
+
+        <div class="footer-links">
+            <a href="https://github.com/vitorcrl" target="_blank">
+                <img src="./images/logo/github64.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/vitor-souza-915766180/" target="_blank">
+                <img src="./images/logo/linkedin64.png" alt="LinkedIn">
+            </a>
+            <a href="https://wa.me/5513991469479" target="_blank">
+                <img src="./images/logo/whatsapp64.png" alt="WhatsApp">
+            </a>
+        </div>
+
+        <p class="footer-copy">© 2025 — Todos os direitos reservados.</p>
+    </div>
 </footer>
+
 
 <script src="./index.js"></script>
 </body>
