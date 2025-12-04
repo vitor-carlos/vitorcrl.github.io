@@ -606,3 +606,16 @@ html {
     color: #ccc;
     font-size: 13px;
 }
+
+.card {
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card.clickable {
+  cursor: pointer;
+}
