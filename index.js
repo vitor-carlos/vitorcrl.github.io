@@ -45,7 +45,8 @@ const projectData = [
       "Sistema que integra APIs com WhatsApp usando filas FIFO para garantir ordem e consistência.",
     stacks: ["Node.js", "JavaScript", "AWS SQS"],
     img: "./images/project/whats.png",
-    bgColor: "#244241"
+    bgColor: "#244241",
+    path: "https://github.com/vitorcrl/whatsapp-message",
   },
   {
     title: "Clean Code — Branas",
@@ -55,6 +56,7 @@ const projectData = [
     stacks: ["TypeScript", "Jest", "Express"],
     img: "./images/project/clean-arch.png",
     bgColor: "#F5F5DC",
+    path: "https://github.com/vitorcrl/cccat14_1",
   },
   {
     title: "GoBarber",
@@ -64,6 +66,7 @@ const projectData = [
     stacks: ["TypeScript", "Node.js", "React"],
     img: "./images/project/rocketseat.png",
     bgColor: "#6c4fbb",
+    path: "https://github.com/vitorcrl/06-Gobarber-Web",
   },
 ];
 
@@ -72,8 +75,11 @@ function createCard(item) {
     .map((stack) => `<span class="stack-tag">${stack}</span>`)
     .join("");
 
+  const clickableClass = item.path ? 'clickable' : '';
+  const onclickAttr = item.path ? `onclick="window.open('${item.path}', '_blank')"` : '';
+
   return `
-    <div class="card">
+    <div class="card ${clickableClass}" ${onclickAttr}>
       <div class="card-image-wrapper" style="background-color: ${item.bgColor || '#f8f8f8'};">
         <img src="${item.img}" alt="${item.title}" class="card-image">
       </div>
@@ -103,32 +109,17 @@ function renderProjects() {
   }
 }
 
-const listComponents = data => {
-  return data.map(repo => {
-    return `
-      <div class="project">
-        ${repo.html_url ? `<a class="repoName" href="${repo.html_url}" target="_blank">${repo.full_name}</a>` : `<p class="repoName"> <strong>${repo.full_name}</strong> </p>`}
-        <p class="description justified"><strong>Descrição:</strong> ${repo.description || 'Descrição não disponível.'}</p>
-        <p class="language"><strong>Linguagem:</strong> ${repo.language || '-'}</p>
-        <p class="percentage"><strong>Porcentagem de conclusão:</strong> ${repo.percentage || 0}%</p>
-        ${repo.img ? `<img class="img small-img" src="${repo.img}" alt="Imagem do projeto">` : ''}
-        <hr>
-      </div>
-    `;
-  }).join('');
-};
-
 const skillCards = document.querySelectorAll('.skill-card');
 
 function revealSkills() {
-    const triggerBottom = window.innerHeight * 0.85;
+  const triggerBottom = window.innerHeight * 0.85;
 
-    skillCards.forEach(card => {
-        const boxTop = card.getBoundingClientRect().top;
-        if (boxTop < triggerBottom) {
-            card.classList.add('animate');
-        }
-    });
+  skillCards.forEach(card => {
+    const boxTop = card.getBoundingClientRect().top;
+    if (boxTop < triggerBottom) {
+      card.classList.add('animate');
+    }
+  });
 }
 
 window.addEventListener('scroll', revealSkills);
