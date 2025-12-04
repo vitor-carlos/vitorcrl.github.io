@@ -68,6 +68,16 @@ const projectData = [
     bgColor: "#6c4fbb",
     path: "https://github.com/vitorcrl/06-Gobarber-Web",
   },
+   {
+    title: "Gerador de PDFs para Etiquetas",
+    subtitle: "Automação para Fábrica de Pipocas",
+    description:
+      "Script Python que automatiza a criação de etiquetas otimizadas em A4. Calcula automaticamente quantas etiquetas cabem na folha, redimensiona logos e gera PDFs prontos para impressão. Resolveu um gargalo real do nosso negócio, economizando tempo e eliminando desperdício.",
+    stacks: ["Python", "ReportLab", "Pillow", "Automação"],
+    img: "./images/project/viana.png",
+    bgColor: "#faecc7",
+    path: "https://github.com/vitorcrl/logo-pdf-generator",
+  },
 ];
 
 function createCard(item) {
